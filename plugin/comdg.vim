@@ -443,7 +443,7 @@ function! <SID>GetVer()
 endfunction
 
 function! <SID>GetEmail()
-  return "zhangbiao@baidu.com"
+  return "liudeqiang01@baidu.com"
 endfunction
 
 function! <SID>GetDoxFileHeader(leading_blank)
@@ -474,13 +474,13 @@ function! <SID>GetDoxMainpage(leading_blank)
 
 	let doc = ""
 	let doc = doc.a:leading_blank."/**\n"
-	let doc = doc.a:leading_blank."* @mainpage xxx介绍及使用方法\n"
-	let doc = doc.a:leading_blank."* \<h2>概述</h2>\n"
+	let doc = doc.a:leading_blank."* @mainpage xxx浠嬬粛鍙婁娇鐢ㄦ柟娉昞n"
+	let doc = doc.a:leading_blank."* \<h2>姒傝堪</h2>\n"
 	let doc = doc.a:leading_blank."* <p>xxxxxxxxxxx</p>\n"
 	let doc = doc.a:leading_blank."* <ol></ol>\n"
-	let doc = doc.a:leading_blank."* <h2>使用方法</h2>\n"
+	let doc = doc.a:leading_blank."* <h2>浣跨敤鏂规硶</h2>\n"
 	let doc = doc.a:leading_blank."* <hr>\n"
-	let doc = doc.a:leading_blank."* <p>问题请发送至<a href=\"mailto:".<SID>GetEmail()."?subject=[dilib]\">.".<SID>GetEmail()."</a></p>\n"
+	let doc = doc.a:leading_blank."* <p>闂璇峰彂閫佽嚦<a href=\"mailto:".<SID>GetEmail()."?subject=[dilib]\">.".<SID>GetEmail()."</a></p>\n"
 	let doc = doc. a:leading_blank."*/\n"
 	return doc
 endfunction
